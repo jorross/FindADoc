@@ -1,10 +1,10 @@
 const router = require('express').Router();
-const { Project } = require('../../models');
+const { Doctor } = require('../../models');
 const withAuth = require('../../utils/auth');
 
 router.post('/', withAuth, async (req, res) => {
   try {
-    const newProject = await Project.create({
+    const newDoctor = await Doctor.create({
       ...req.body,
       user_id: req.session.user_id,
     });
@@ -17,19 +17,19 @@ router.post('/', withAuth, async (req, res) => {
 
 router.delete('/:id', withAuth, async (req, res) => {
   try {
-    const projectData = await Project.destroy({
+    const doctorData = await Doctor.destroy({
       where: {
         id: req.params.id,
         user_id: req.session.user_id,
       },
     });
 
-    if (!projectData) {
-      res.status(404).json({ message: 'No project found with this id!' });
+    if (!doctorData) {
+      res.status(404).json({ message: 'No doctor found with this id!' });
       return;
     }
 
-    res.status(200).json(projectData);
+    res.status(200).json(doctorData);
   } catch (err) {
     res.status(500).json(err);
   }
