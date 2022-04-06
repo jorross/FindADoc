@@ -1,17 +1,18 @@
 [
   {
-    "name": "Music Near Me",
-    "description": "A mobile app that will send you notifications whenever a concert is playing in your area.",
-    "needed_funding": 5000
+    "name": "Andres",
+    "description": "One of our best doctors who specializes in family care in your area."
   },
   {
-    "name": "The Ultimate Tech Quiz",
-    "description": "A web app that will give users 10 new technical questions each day and track their progress in things like programming, cybersecurity, database architecture, and more!",
-    "needed_funding": 10000
+    "name": "Jacob",
+    "description": "One of our most tenured doctors here! his specialties include neurology and is a top rated physician."
   },
   {
-    "name": "Roll 'Em Up",
-    "description": "A game for Windows and macOS where players move a ball through a series of increasingly challenging mazes.",
-    "needed_funding": 800
+    "name": "Morgan",
+    "description": "He is newer to the team but comes with many years of experience with other locations. Very friendly and is ready to help with whatever health needs you have."
+  },
+  {
+    "name": "AJ",
+    "description": "He is our go to Pediatrician. He knows what to look for and is the best when it comes to preventative care for your young ones."
   }
 ]
