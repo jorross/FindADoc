@@ -17,8 +17,20 @@ header, .project:not(:last-child) {
   text-decoration: underline;
 }
 
-.dollar-amount {
-  color: #056605;
-  font-weight: bold;
-  margin-left: -5px;
+.jheader {
+  background-color: blue;
+  color: white;
+}
+
+button {
+  justify-content:center;
+}
+
+h3 {
+  color: darkgray;
+  text-align: center;
+}
+
+footer {
+ text-align: center;
 }
