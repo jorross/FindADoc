@@ -2,23 +2,28 @@ header, .project:not(:last-child) {
   border-bottom: 1px solid #ccc;
 }
 
+body {
+  background-image: url("./images/background.jpg");
+}
+
 .no-button {
   background: none;
   border: none;
   padding: 0;
   cursor: pointer;
-  color: #1b89bc;
+  color: #0400ff;
   text-decoration: none;
   font-size: 100%;
 }
 
 .no-button:hover {
-  color: #065b83;
+  color: #ffffff;
   text-decoration: underline;
 }
 
 .jheader {
-  background-color: blue;
+  /* background-color:#054c6d;
+  ; */
   color: white;
 }
 
@@ -33,4 +38,10 @@ h3 {
 
 footer {
  text-align: center;
+}
+
+form {
+  justify-content: center;
+  display: flex;
+  padding: 11rem;
 }
