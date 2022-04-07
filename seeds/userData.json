@@ -1,20 +1,24 @@
 [
   {
+    "user_name": "jjarvis",
     "name": "Jeff",
     "email": "jeff@email.com",
     "password": "password12345"
   },
   {
+    "user_name": "jross",
     "name": "Jordan",
     "email": "jordan@email.com",
     "password": "password12345"
   },
   {
+    "user_name": "ddow",
     "name": "Dennis",
     "email": "dennis@email.com",
     "password": "password12345"
   },
   {
+    "user_name": "kboard",
     "name": "Kija",
     "email": "kija@email.com",
     "password": "password12345"
