@@ -1,13 +1,28 @@
 <!DOCTYPE html>
-<html>
+<html lang='en'>
   <head>
-    <title>Google Calendar API Quickstart</title>
-    <meta charset="utf-8" />
+    <meta charset='utf-8' />
+    <link href='fullcalendar/main.css' rel='stylesheet' />
+    <script src='fullcalendar/main.js'></script>
+    <script>
+
+      document.addEventListener('DOMContentLoaded', function() {
+        var calendarEl = document.getElementById('calendar');
+        var calendar = new FullCalendar.Calendar(calendarEl, {
+          initialView: 'dayGridMonth'
+        });
+        calendar.render();
+      });
+
+    </script>
   </head>
   <body>
-    <p>Google Calendar API Quickstart</p>
+    <div id='calendar'></div>
+  </body>
+</html>
+    <!-- <p>Google Calendar API Quickstart</p>
 
-    <!--Add buttons to initiate auth sequence and sign out-->
+    Add buttons to initiate auth sequence and sign out
     <button id="authorize_button" style="display: none;">Authorize</button>
     <button id="signout_button" style="display: none;">Sign Out</button>
 
@@ -129,13 +144,13 @@
             appendPre('No upcoming events found.');
           }
         });
-      }
+      } -->
 
-    </script>
+    <!-- </script>
 
     <script async defer src="https://apis.google.com/js/api.js"
       onload="this.onload=function(){};handleClientLoad()"
       onreadystatechange="if (this.readyState === 'complete') this.onload()">
-    </script>
-  </body>
-</html>
+    </script> -->
+  <!-- </body>
+</html> -->
