@@ -16,6 +16,26 @@ router.post("/", async (req, res) => {
   }
 });
 
+router.post("/signup", async (req, res) => {
+  try {
+    const newUser = await User.create(req.body);
+
+    // verify email format/uniqueness
+
+    req.session.save(() => {
+      req.session.user_id = newUser.id;
+      req.session.logged_in = true;
+
+      res.json({
+        user: newUser,
+        message: "Your account has now been created!",
+      });
+    });
+  } catch (err) {
+    res.status(400).json(err);
+  }
+});
+
 router.post("/login", async (req, res) => {
   try {
     const userData = await User.findOne({ where: { email: req.body.email } });
