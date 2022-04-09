@@ -1,42 +1,35 @@
-<div class="row">
-  <div class="col-md-6">
-    <h2>Login</h2>
 
-    <form class="form login-form">
-      <div class="form-group">
-        <label for="email-login">email:</label>
-        <input class="form-input" type="text" id="email-login" />
-      </div>
-      <div class="form-group">
-        <label for="password-login">password:</label>
-        <input class="form-input" type="password" id="password-login" />
-      </div>
-      <div class="form-group">
-        <button class="btn btn-primary" type="submit">login</button>
-      </div>
-    </form>
+<div class="jumbotron d-flex jumbotron-fluid jheader">
+    <div class="container">
+      <h1 class="display-4">Find-A-Doc</h1>
+    </div>
   </div>
-  <div class="col-md-6">
-    <h2>Signup</h2>
+  <h2>Please register!</h2>
+  <form>
+    <div class="form-group">
+      <div class="col-md-15">
+      <label for="exampleInputEmail1" class="text-white">Pick a User Name:</label>
+      <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Username">
+    <div class="form-group">
+      <div class="col-md-15">
+      <label for="exampleInputEmail1" class="text-white">Enter Your Email Address:</label>
+      <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+    </div>
+    <div class="form-group">
+      <div class="col-md-15">
+        <label for="exampleInputPassword1" class="text-white">Choose a Password:</label>
+        <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+    </div>
+    </div>
+    <br />
+    <button type="submit" class="btn btn-primary">Submit</button>
+  
+  <footer>
+    <p>©2022 OnlyDocs</p>
+  </footer>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+<script src="./js/login.js"></script>
 
-    <form class="form signup-form">
-      <div class="form-group">
-        <label for="name-signup">name:</label>
-        <input class="form-input" type="text" id="name-signup" />
-      </div>
-      <div class="form-group">
-        <label for="email-signup">email:</label>
-        <input class="form-input" type="text" id="email-signup" />
-      </div>
-      <div class="form-group">
-        <label for="password-signup">password:</label>
-        <input class="form-input" type="password" id="password-signup" />
-      </div>
-      <div class="form-group">
-        <button class="btn btn-primary" type="submit">signup</button>
-      </div>
-    </form>
-  </div>
-</div>
+
 
 <script src="./js/login.js"></script>
