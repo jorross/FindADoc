@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Nylas Scheduler Simple Example</title>
+
+    <!-- Import the Nylas Schedule Editor script --> 
+    <script src="https://schedule.nylas.com/schedule-editor/v1.0/schedule-editor.js" type="text/javascript"></script>
+    
+  </head>
+
+  <body>
+    <!-- Create a button and give it an ID to reference later --> 
+    <button type="button" id="schedule-editor">Open Schedule Editor</button>
+
+    <iframe id="scheduleView"
+      title="schedule"
+      height="700"
+      width="950"
+      src="https://schedule.nylas.com/jordan-ross-60min-1">
+    </iframe>
+
+    <script>
+      var btn = document.getElementById('schedule-editor');
+      btn.addEventListener('click', function() {
+        // Prompt the Schedule Editor when a user clicks on the button
+        nylas.scheduler.show({
+          auth: {
+            // Account <ACCESS_TOKEN> with active calendar scope
+            accessToken: "puFScl0BQTUpIbgKoXM8brdMcvpLOO", 
+          },
+          style: {
+            // Style the Schedule Editor
+            tintColor: '#32325d',
+            backgroundColor: 'white',
+          },
+          defaults: {
+            event: {
+              title: '30-min Coffee Meeting',
+              duration: 30,
+            },
+          },
+        });
+      });
+    </script>
+
+  </body>
+
+</html>  
+ 
