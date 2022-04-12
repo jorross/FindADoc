@@ -35,6 +35,11 @@ User.init(
         len: [8],
       },
     },
+    role: {
+      type: DataTypes.STRING,
+      allowNull: false,
+      defaultValue: "patient",
+    },
   },
   {
     hooks: {
