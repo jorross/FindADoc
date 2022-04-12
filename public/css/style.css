@@ -27,13 +27,20 @@ body {
   color: white;
 }
 
-button {
-  justify-content:center;
+form button {
+  align-items:center;
 }
 
+h1 {
+  color:white;
+  text-align:left;
+  }
+
 h2 {
+  font-size: 35px;
   color:white;
   text-align:center;
+  padding:20px;
 }
 
 h3 {
@@ -50,11 +57,13 @@ h4 {
 }
 
 footer {
- text-align: center;
+ color:white;
+text-align: center;
+ padding: 2px;
 }
 
-form {
+.login-form {
   justify-content: center;
   display: flex;
-  padding: 11rem;
+  padding: 0;
 }
