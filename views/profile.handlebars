@@ -16,8 +16,8 @@
       }
       if (newRole === 'doctor') {
         document.getElementById('doctor-field').innerHTML += "<button type=\"button\" id=\"schedule-editor\" class=\"hide\">Open Schedule Editor</button>"
-        var btn = document.getElementById('schedule-editor');
-        btn.addEventListener('click', function() {
+        //var btn = document.getElementById('schedule-editor');
+        //btn.addEventListener('click', function() {
         // Prompt the Schedule Editor when a user clicks on the button
         nylas.scheduler.show({
             auth: {
@@ -36,7 +36,7 @@
               },
             },
           });
-        });
+        //});
       }
       else {
         document.getElementById('doctor-field').innerHTML += "<iframe class=\"bg-light\" id=\"scheduleView\" title=\"schedule\" height=\"600\" width=\"800\" src=\"https://schedule.nylas.com/jordan-ross-60min-1\"></iframe>"
