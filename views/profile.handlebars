@@ -6,51 +6,7 @@
 
 <body>
     <!-- Create a button and give it an ID to reference later -->
+    <div id="selector-field"></div>
     <div id="doctor-field"></div>
-
-    <script>
-      let role = document.getElementById('role-grabber').innerHTML;
-      let newRole = role.split(' ')[1];
-      if (newRole != 'doctor' && newRole != 'patient') {
-        location.replace('/signup');
-      }
-      if (newRole === 'doctor') {
-        document.getElementById('doctor-field').innerHTML += "<button type=\"button\" id=\"schedule-editor\" class=\"hide\">Open Schedule Editor</button>"
-        //var btn = document.getElementById('schedule-editor');
-        //btn.addEventListener('click', function() {
-        // Prompt the Schedule Editor when a user clicks on the button
-        nylas.scheduler.show({
-            auth: {
-              // Account <ACCESS_TOKEN> with active calendar scope
-              accessToken: "puFScl0BQTUpIbgKoXM8brdMcvpLOO", 
-            },
-            style: {
-              // Style the Schedule Editor
-              tintColor: '#32325d',
-              backgroundColor: 'white',
-            },
-            defaults: {
-            event: {
-              title: '30-min Checkup',
-              duration: 30,
-              },
-            },
-          });
-        //});
-      }
-      else {
-        document.getElementById('doctor-field').innerHTML += `<select class="form-select" id="doctor-select" aria-label="Doctor schedule select">
-          <option selected>Select a Doctor's schedule!</option>
-          <option value="1">Doctor Jordan</option>
-          <option value="2">Doctor Jeff</option>
-        </select>`;
-
-        var select = document.getElementById('doctor-select');
-        var value = select.options[select.selectedIndex].value;\
-        console.log(value);
-        document.getElementById('doctor-field').innerHTML += "<iframe class=\"bg-light\" id=\"scheduleView\" title=\"schedule\" height=\"600\" width=\"800\" src=\"https://schedule.nylas.com/jordan-ross-60min-1\"></iframe>"
-      }
-      
-    </script>
     
 <script src="./js/profile.js"></script>
