@@ -39,6 +39,15 @@
         //});
       }
       else {
+        document.getElementById('doctor-field').innerHTML += `<select class="form-select" id="doctor-select" aria-label="Doctor schedule select">
+          <option selected>Select a Doctor's schedule!</option>
+          <option value="1">Doctor Jordan</option>
+          <option value="2">Doctor Jeff</option>
+        </select>`;
+
+        var select = document.getElementById('doctor-select');
+        var value = select.options[select.selectedIndex].value;\
+        console.log(value);
         document.getElementById('doctor-field').innerHTML += "<iframe class=\"bg-light\" id=\"scheduleView\" title=\"schedule\" height=\"600\" width=\"800\" src=\"https://schedule.nylas.com/jordan-ross-60min-1\"></iframe>"
       }
       
