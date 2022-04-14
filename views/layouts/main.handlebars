@@ -13,16 +13,16 @@
 
 <body>
   <div class="flex-column justify-space-around">
-    <header class="display-flex justify-space-between align-center p-2">
+    <header class="display-flex justify-space-between align-center p-2" id="page-header">
       <h1 class="display-4">Find-A-Doc</h1>
       <nav>
         <!-- Conditionally render login or logout links -->
         {{#if logged_in}}
-        <a href="/profile">profile</a> |
+        <a class="nav-link" href="/profile">profile</a> |
         <button class="no-button" id="logout">logout</button>
         {{else}}
-        <a href="/login">login</a>
-        <a href="/signup">signup</a>
+        <a class="nav-link" href="/login">login</a>
+        <a class="nav-link" href="/signup">signup</a>
         {{/if}}
       </nav>
     </header>
