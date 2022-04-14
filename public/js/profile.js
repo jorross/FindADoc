@@ -1,5 +1,5 @@
-let role = document.getElementById("role-grabber").innerHTML;
-let newRole = role.split(" ")[1];
+//console.log(user_role);
+let newRole = user_role;
 if (newRole != "doctor" && newRole != "patient") {
   location.replace("/signup");
 }
@@ -24,6 +24,28 @@ if (newRole === "doctor") {
       },
     },
   });
+  document
+    .getElementById("schedule-editor")
+    .addEventListener("click", function () {
+      // Prompt the Schedule Editor when a user clicks on the button
+      nylas.scheduler.show({
+        auth: {
+          // Account <ACCESS_TOKEN> with active calendar scope
+          accessToken: "puFScl0BQTUpIbgKoXM8brdMcvpLOO",
+        },
+        style: {
+          // Style the Schedule Editor
+          tintColor: "#32325d",
+          backgroundColor: "white",
+        },
+        defaults: {
+          event: {
+            title: "30-min Checkup",
+            duration: 30,
+          },
+        },
+      });
+    });
 } else {
   document.getElementById(
     "selector-field"
