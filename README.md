@@ -1,12 +1,8 @@
-# 15 Project 2: Interactive Full-Stack Application
-
-Projects play a key role in your journey to becoming a full-stack web developer. As you enter the last phase of the boot camp, you’ll begin to apply for development jobs. If you want to land interviews, your portfolio must feature high-quality deployed examples of your work—-and you can use your finished projects for that very purpose.
-
-As your first opportunity to show employers your collaborative skills and coding abilities, this particular project will be a focal point of your portfolio. Employers want to see what you can do, but they also want to see how you work with other developers. The more examples of deployed collaborative work you have in your portfolio, the more likely you are to get an interview and a job.
+# Find-A-Doc
 
 ## Project Requirements
 
-You and your group will use everything you’ve learned over the past six modules to create a real-world full-stack application that you’ll be able to showcase to potential employers. The user story and acceptance criteria will depend on the project that you create, but your project must fulfil the following requirements:
+Our group used everything we’ve learned over the past six modules to create a real-world full-stack application that we’ll be able to showcase to potential employers. The user story and acceptance criteria for the project are listed below; however, the project had to fulfil the following requirements:
 
 * Use Node.js and Express.js to create a RESTful API.
 
@@ -36,91 +32,90 @@ You and your group will use everything you’ve learned over the past six module
 
 * Have a professional README (with unique name, description, technologies used, screenshot, and link to deployed application).
 
-## Presentation Requirements
+## User Story - Patient
 
-Use this [project presentation template](https://docs.google.com/presentation/d/10QaO9KH8HtUXj__81ve0SZcpO5DbMbqqQr4iPpbwKks/edit?usp=sharing) to address the following: 
+```md
+AS A patient who is sick
+I WANT to log in to my own portal
+SO THAT I can pull up a doctor's schedule to find a doctor and create an appointment
+```
 
-* Elevator pitch: a one minute description of your application
+## Acceptance Criteria - Patient
 
-* Concept: What is your user story? What was your motivation for development?
+```md
+GIVEN a CMS-style doctor/patient web portal
+WHEN I visit the site for the first time
+THEN I am presented with a homepage, which includes the option to log in using an email address and password if already registered, and the option to create a new account if this is the first time I am accessing the site
+WHEN I click on the "Sign up here" link
+THEN I am taken to a registration page where I can create an account
+WHEN I click on any other links on the registration page
+THEN I am prompted to either log in sign up
+WHEN I log in
+THEN I am presented with a scheduler where I can set up an appointment with a doctor from a list of available slots
+WHEN I click on the signout link
+THEN I am signed out of the application
+```
 
-* Process: What were the technologies used? How were tasks and roles broken down and assigned? What challenges did you encounter? What were your successes?
+## User Story - Doctor
 
-* Demo: Show your stuff!
+```md
+AS A doctor
+I WANT to log in to my own portal
+SO THAT I can set my appointment availability
+```
 
-* Directions for Future Development
+## Acceptance Criteria - Doctor
 
-* Links to the deployed application and the GitHub repository. Use the [Guide to Deploy with Heroku and MySQL](https://coding-boot-camp.github.io/full-stack/heroku/deploy-with-heroku-and-mysql) on The Full-Stack Blog if you need a reminder on how to deploy to Heroku.
+```md
+GIVEN a CMS-style doctor/patient web portal
+WHEN I visit the site for the first time
+WHEN I choose to sign up
+THEN I am prompted to create a username and password
+WHEN I click on the sign-up button
+THEN my user credentials are saved and I am logged into the site
+WHEN I revisit the site at a later time and choose to sign in
+THEN I am prompted to enter my username and password
+THEN I am presented with the homepage, which includes the option to log in
+WHEN I click on the profile option
+THEN I am taken to the homepage
+WHEN I click on the scheduler 
+THEN I can edit or add new meetings
+WHEN I am signed in to the site
+THEN I see navigation links for the homepage, and the option to log out
+```
 
-## Grading Requirements
+## Technologies Used
 
-This project is graded based on the following criteria:
+* Node.js
+* Express.js
+* Nylas scheduler API
+* Bootstrap.js
+* Handlebars.js
+* Sequelize
+* MySQL DB
+* JawsDB
 
-### Technical Acceptance Criteria: 25%
+## Presentation
 
-* Satisfies the following code requirements:
+Here is a *[Link to our Presentation](https://docs.google.com/presentation/d/1mn6J_7nnp4Pgume-fF4Xr6EI3VFb1WtJK0Juhu4Fpbc/edit?usp=sharing)*.
 
-  * Application uses a Node.js and Express.js back end and uses both GET and POST routes for retrieving and adding new data.
+## Screenshots
 
-  * Application has a folder structure that meets the MVC paradigm and uses Handlebars.js as the template engine.
+Login:
+![Find-A-Doc Login](/assets/images/FindADoc_Login.png "Find-A-Doc Login")
 
-  * Application is backed by a MySQL database with a Sequelize ORM and protects API keys and sensitive information with environment variables.
+Registration:
+![Find-A-Doc Registration](/assets/images/FindADoc_Registration.png "Find-A-Doc Registration")
 
-  * Application includes user authentication (express-session and cookies).
+Doctor View (Scheduler):
+![Find-A-Doc Doctor View](/assets/images/FindADoc_Doctor.png "Find-A-Doc Doctor View")
 
-  * Application uses at least one new library, package, or technology not covered in class.
+Patient View (Doctor Selector):
+![Find-A-Doc Patient View](/assets/images/FindADoc_Patient.png "Find-A-Doc Patient View")
 
-### Concept 10%
 
-* Application should be a unique and novel idea.
+## Links to Deployed Application
 
-* Your group should clearly and concisely articulate your project idea.
+* [Heroku App](https://find-a-doc.herokuapp.com/login)
 
-### Deployment: 20%
-
-* Application deployed at live URL on Heroku and loads with no errors.
-
-* Application GitHub URL submitted.
-
-### Repository Quality: 10%
-
-* Repository has a unique name.
-
-* Repository follows best practices for file structure and naming conventions.
-
-* Repository follows best practices for class/id-naming conventions, indentation, quality comments, etc.
-
-* Repository contains multiple descriptive commit messages.
-
-* Repository contains quality README file with description, screenshot, and link to deployed application.
-
-### Application Quality: 15%
-
-* Application user experience is intuitive and easy to navigate.
-
-* Application user interface style is clean and polished.
-
-* Application is responsive.
-
-### Presentation 10%
-
-* Your group should present using a slide deck.
-
-* Every group member should speak during the presentation.
-
-* Your presentation should follow the [Project Presentation Template](https://docs.google.com/presentation/d/10QaO9KH8HtUXj__81ve0SZcpO5DbMbqqQr4iPpbwKks/edit?usp=sharing).
-
-### Collaboration 10%
-
-* There are no major disparities in the number of GitHub contributions between group members.
-
-## How to Submit Your Interactive Full-Stack Project
-
-**Each member of your group** is required to submit the following for review:
-
-* The URL of the deployed application.
-
-* The URL of the GitHub repository, with a unique name and a README describing the project.
-
----
-© 2022 Trilogy Education Services, LLC, a 2U, Inc. brand. Confidential and Proprietary. All Rights Reserved.
+* [GitHub Repo](https://github.com/jorross/FindADoc)
