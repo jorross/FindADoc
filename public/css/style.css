@@ -6,6 +6,20 @@ body {
   background-image: url("./images/background.jpg");
 }
 
+title {
+  padding-left: 16px;
+}
+
+#page-header {
+  background-color:#373a3a;
+}
+
+.nav-link {
+  margin-left: 16px;
+  display: inline;
+  font-size: 150%;
+}
+
 .no-button {
   background: none;
   border: none;
@@ -21,9 +35,12 @@ body {
   text-decoration: underline;
 }
 
+.lead {
+  font-weight: bolder;
+}
+
 .jheader {
-  background-color:#054c6d;
-  ;
+  /* background-color:#054c6d; */
   color: white;
 }
 
@@ -44,7 +61,7 @@ h2 {
 }
 
 h3 {
-  color: darkgray;
+  color: #373a3a;
   text-align: center;
 }
 
