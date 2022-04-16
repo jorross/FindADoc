@@ -1,14 +1,11 @@
-<div class="row">
+<div class="row justify-content-center">
   <div class="col-auto">
-    <h2 id="role-grabber">Welcome, {{name}}!</h2>
+    <h2 class="" id="role-grabber">Welcome, {{name}}!</h2>
+    <div id="selector-field" class="col-12"></div>
+    <div id="doctor-field"></div>
   </div>
 </div>
 
-<body>
-    <!-- Create a button and give it an ID to reference later -->
-    <div id="selector-field"></div>
-    <div id="doctor-field"></div>
-
-    <script>var user_role = "{{role}}"</script>
+<script>var user_role = "{{role}}"</script>
     
 <script src="./js/profile.js"></script>

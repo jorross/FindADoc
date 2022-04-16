@@ -4,15 +4,27 @@ header, .project:not(:last-child) {
 
 body {
   background-image: url("./images/background.jpg");
+  /* background-repeat: no-repeat; */
+  background-size: cover;
+  /* background-size: 100% 100%; */
+  min-height: 100%;
 }
 
 title {
   padding-left: 16px;
 }
 
+#main-content {
+  min-height: 100%;
+}
+
 #page-header {
   background-color:#373a3a;
 }
+
+/* #logo {
+  object-fit: scale-down;
+} */
 
 .nav-link {
   margin-left: 16px;
@@ -25,9 +37,7 @@ title {
   border: none;
   padding: 0;
   cursor: pointer;
-  color: #0400ff;
   text-decoration: none;
-  font-size: 100%;
 }
 
 .no-button:hover {
