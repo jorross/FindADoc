@@ -27,9 +27,7 @@ title {
   border: none;
   padding: 0;
   cursor: pointer;
-  color: #0400ff;
   text-decoration: none;
-  font-size: 100%;
 }
 
 .no-button:hover {
