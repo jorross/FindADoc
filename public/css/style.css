@@ -6,10 +6,16 @@ body {
   background-image: url("./images/background.jpg");
   /* background-repeat: no-repeat; */
   background-size: cover;
+  /* background-size: 100% 100%; */
+  min-height: 100%;
 }
 
 title {
   padding-left: 16px;
+}
+
+#main-content {
+  min-height: 100%;
 }
 
 #page-header {
