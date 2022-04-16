@@ -16,6 +16,10 @@ title {
   background-color:#373a3a;
 }
 
+/* #logo {
+  object-fit: scale-down;
+} */
+
 .nav-link {
   margin-left: 16px;
   display: inline;
